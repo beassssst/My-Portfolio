@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rudra Pratap Singh - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-500 text-white font-sans min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="flex justify-between items-center p-5 relative">
+    <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold font-serif">
+      Rudra Pratap Singh
+    </h1>
+
+    <!-- Hamburger Button (Visible on Small Screens) -->
+    <button id="menu-btn" class="lg:hidden text-2xl focus:outline-none">
+      ☰
+    </button>
+
+    <!-- Navbar Links -->
+    <nav id="menu" class="hidden lg:flex lg:flex-row lg:items-center lg:space-x-6 text-lg absolute lg:static right-5 top-16 bg-blue-600 lg:bg-transparent p-4 lg:p-0 rounded-lg lg:rounded-none shadow-lg lg:shadow-none w-48 lg:w-auto">
+      <ul class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-6 text-left">
+        <li><a href="./CV (2).png" target="_blank" class="hover:scale-110 transition block">My Resume</a></li>
+        <li><a href="tel:+91-9354089730" class="hover:scale-110 transition block">📞</a></li>
+        <li><a href="mailto:irudrapratapsingh2803@gmail.com" class="hover:scale-110 transition block">📧</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/rudra-pratap-singh-6b03991ba" target="_blank" class="hover:scale-110 transition flex items-center">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" class="w-6 h-6 mr-2" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner -->
+  <section class="w-full h-64 sm:h-80 md:h-96 my-4 overflow-hidden">
+    <img src="./Profile Banner.jpg" alt="Banner" class="w-full h-full object-cover object-center">
+  </section>
+
+  <!-- Introduction + Skills -->
+  <section class="px-6 md:px-20 py-6">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Left: Introduction -->
+      <div class="bg-white bg-opacity-10 p-6 rounded-xl border-l-4 border-blue-900 shadow-lg flex-1">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4 font-sans">Hey, I’m <span class="text-white">Rudra Pratap Singh</span></h2>
+        <p class="text-left text-lg md:text-xl leading-relaxed text-white/90">
+          I am an aspiring <span class="font-semibold text-blue-900">web developer</span> passionate about creating modern, responsive, and user-friendly websites.  
+          I have hands-on experience with <span class="font-semibold text-blue-900">HTML 5, CSS 3, Bootstap, Tailwind CSS, and JavaScript</span>.  
+          Currently, I am enhancing my skills in <span class="font-semibold text-blue-900">advanced JavaScript, NodeJs, and MongoDB</span> to grow as a full-stack developer.  
+          My goal is to combine technical expertise with creativity to build impactful digital solutions that make a difference.
+        </p>
+      </div>
+
+      <!-- Right: Skills -->
+      <div class="bg-white bg-opacity-10 p-6 rounded-xl shadow-lg flex-1">
+        <h3 class="text-2xl font-bold text-blue-900 mb-4">My Skills</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">HTML 5</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">CSS 3</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">Bootstrap</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">Tailwind CSS</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">JavaScript (Learning)</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">MongoDB (Learning)</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">NodeJS (Learning)</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">Cross-Browser Compatibility</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">Problem-Solving</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">Version Control (Git)</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">Performance Optimization</span>
+          <span class="bg-blue-900 text-white px-3 py-1 rounded-full font-semibold">Responsive Web Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Carousel -->
+  <section class="relative py-12 bg-white flex items-center justify-center">
+    <!-- Left Arrow -->
+    <button id="prev" class="text-blue-500 absolute left-4 text-3xl font-bold hover:text-blue-800">&larr;</button>
+
+    <!-- Quotes -->
+    <div class="w-full max-w-3xl overflow-hidden relative">
+      <div id="quotes" class="flex transition-transform duration-500">
+        <div class="flex-shrink-0 w-full px-6 text-center text-xl md:text-2xl font-semibold text-blue-500">
+          "Code is like humor. When you have to explain it, it’s bad."
+        </div>
+        <div class="flex-shrink-0 w-full px-6 text-center text-xl md:text-2xl font-semibold text-blue-500">
+          "Make it work, make it right, make it fast."
+        </div>
+        <div class="flex-shrink-0 w-full px-6 text-center text-xl md:text-2xl font-semibold text-blue-500">
+          "Dream it. Build it. Ship it."
+        </div>
+        <div class="flex-shrink-0 w-full px-6 text-center text-xl md:text-2xl font-semibold text-blue-500">
+          "Every great developer you know started as a beginner."
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Arrow -->
+    <button id="next" class="text-blue-500 absolute right-4 text-3xl font-bold hover:text-blue-800">&rarr;</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-blue-500 text-lg font-semibold">
+    Rudra Pratap Singh
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Carousel
+    const quotes = document.getElementById('quotes');
+    const totalQuotes = quotes.children.length;
+    let currentIndex = 0;
+
+    document.getElementById('prev').addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalQuotes) % totalQuotes;
+      quotes.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+
+    document.getElementById('next').addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalQuotes;
+      quotes.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
+
+    // Hamburger menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
