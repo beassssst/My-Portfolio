@@ -15,16 +15,41 @@
       <h1 class="text-xl md:text-2xl font-extrabold font-serif">
         Rudra Pratap Singh
       </h1>
-      <nav class="flex items-center space-x-6 text-lg">
-        <a href="index.html" class="hover:scale-110 transition">⬅️</a>
-      </nav>
+
+      <!-- Go back button --> 
+      <button
+        onclick="window.history.back()"
+        class="bg-white text-center w-48 rounded-2xl h-8 relative text-black text-xl font-semibold group"
+        type="button"
+      >
+        <div
+          class="bg-blue-500 rounded-xl h-6 w-1/4 flex items-center justify-center absolute left-1 top-[4px] group-hover:w-[184px] z-10 duration-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1024 1024"
+            height="25px"
+            width="25px"
+          >
+            <path
+              d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"
+              fill="#000000"
+            ></path>
+            <path
+              d="m237.248 512 265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"
+              fill="#000000"
+            ></path>
+          </svg>
+        </div>
+        <p class="translate-x-2">Go Back</p>
+      </button>
     </header>
 
-    <!-- Spacer to offset fixed navbar -->
+    <!-- Spacer for fixed navbar -->
     <div class="h-20"></div>
 
-    <!-- Resume Section Wrapper -->
-    <section class="px-6 md:px-20 py-12 space-y-12">
+    <!-- Main content wrapper (pushes footer down) -->
+    <main class="flex-grow px-6 md:px-20 py-12 space-y-12">
 
       <!-- Education -->
       <div class="bg-blue-600 border-l-4 border-blue-950 p-6 rounded-2xl shadow-lg hover:shadow-blue-500/30 transition">
@@ -79,9 +104,9 @@
         </ul>
       </div>
 
-    </section>
+    </main>
 
-    <!-- Footer -->
+    <!-- Footer (always at bottom) -->
     <footer class="text-center py-6 bg-black text-lg font-semibold border-t border-blue-900">
       Rudra Pratap Singh
     </footer>
